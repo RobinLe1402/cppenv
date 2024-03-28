@@ -6,7 +6,7 @@
     <_PropertySheetDisplayName>rlStaticLib</_PropertySheetDisplayName>
     <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Configuration)\</IntDir>
-    <TargetName>$(SolutionName)</TargetName>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>

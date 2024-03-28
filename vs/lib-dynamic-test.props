@@ -6,7 +6,7 @@
     <_PropertySheetDisplayName>rlDynamicLibTest</_PropertySheetDisplayName>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Configuration)\</IntDir>
-    <TargetName>$(SolutionName)</TargetName>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
