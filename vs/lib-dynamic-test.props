@@ -19,12 +19,8 @@
     </Link>
     <CustomBuildStep />
     <CustomBuildStep />
-    <PostBuildEvent>
-      <Command>copy "$(SolutionDir)lib\$(Configuration)\*.dll" "$(OutDir)"</Command>
-    </PostBuildEvent>
-    <PostBuildEvent>
-      <Message>Copying DLLs...</Message>
-    </PostBuildEvent>
+    <PostBuildEvent />
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

@@ -17,6 +17,12 @@
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)*.dll" "$(SolutionDir)bin\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying DLLs...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
