@@ -17,6 +17,9 @@
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)</AdditionalLibraryDirectories>
+    </Lib>
     <PostBuildEvent>
       <Command>copy "$(OutDir)*.dll" "$(SolutionDir)bin\$(Configuration)\" /Y</Command>
     </PostBuildEvent>
