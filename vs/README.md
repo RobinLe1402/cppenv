@@ -37,15 +37,19 @@ All files share the following settings:
 
 #### `lib-dynamic`
 * additional include directory `$(ProjectDir)..\include` (relative for usage as git module)
+  + project file is assumed to be located within `src\`
 * additional library directory for librarian
 * post-build event: copying DLLs from `$(OutDir)` to `bin\` post-build
 
 #### `lib-dynamic-test`
-* additional include directory `$(ProjectDir)..\include` (relative for usage as git module)
+* additional include directory `$(ProjectDir)..\..\include` (relative for usage as git module)
+  + project file is assumed to be located within `test\<testname>\`
 
 #### `lib-static`
 * additional include directory `$(ProjectDir)..\include` (relative for usage as git module)
+  + project file is assumed to be located within `src\`
 * additional library directory for librarian
 
 #### `lib-static-test`
-* additional include directory `$(ProjectDir)..\include` (relative for usage as git module)
+* additional include directory `$(ProjectDir)..\..\include` (relative for usage as git module)
+  + project file is assumed to be located within `test\<testname>\`
