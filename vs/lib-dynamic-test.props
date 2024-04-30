@@ -17,10 +17,6 @@
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
-    <CustomBuildStep />
-    <CustomBuildStep />
-    <PostBuildEvent />
-    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
