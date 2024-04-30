@@ -1,10 +1,40 @@
-# Visual Studio Property Sheets
+﻿# Visual Studio Property Sheets
 
 This directory contains property sheets (configuration files) for different types of
 Visual C++ projects (`.vcxproj` files).
 
 > [!NOTE]
 > All directories (except for include directories) get `$(Configuration)\` added as a suffix.
+
+
+## File System
+The following directory structure is assumed:
+```
+<repo root>
+ ├ <solution file>
+ ├───bin
+ │   ├───Debug
+ │   │   └─── <debug versions of executables (.exe, .pdb)>
+ │   └───Release
+ │       └─── <release versions of executables (.exe, .pdb)>
+ ├───dependencies
+ │   └─── <submodules>
+ ├───examples
+ │   └─── <directories containing examples, project file on highest level within>
+ ├───include
+ │   └─── <include subdirectories, like "rlText">
+ ├───lib
+ │   ├───Debug
+ │   │   └─── <debug versions of libraries (.exp, .lib, .idb, .pdb)>
+ │   └───Release
+ │       └─── <release versions of libraries (.exp, .lib, .pdb)>
+ ├───src
+ │   └─── <source files + private headers>
+ ├───test
+ │   └─── <directories containing tests, project file on highest level within>
+ └───tmp
+     └─── <intermediate files>
+```
 
 
 ## Common Configuration
