@@ -21,13 +21,13 @@ All files share the following settings:
 
 ### Quick Overview
 
-| Filename            | Display Name        | Project type                | Output directory |
-|---------------------|---------------------|-----------------------------|------------------|
-| `app`               | `rlApp`             | Applications                | `bin\`           |
-| `lib-dynamic`       | `rlDynamicLib`      | Dynamic libraries           | `lib\`           |
-| `lib-dynamic-test`  | `rlDynamicLibTest`  | Tests for dynamic libraries | `bin\`           |
-| `lib-static`        | `rlStaticLib`       | Static libraries            | `lib\`           |
-| `lib-static-test`   | `rlStaticLibTest`   | Tests for static libraries  | `bin\`           |
+| Filename          | Display Name      | Project type                         | Output directory |
+|-------------------|-------------------|--------------------------------------|------------------|
+| `app`             | `rlApp`           | Applications                         | `bin\`           |
+| `lib-dynamic`     | `rlDynamicLib`    | Dynamic libraries                    | `lib\`           |
+| `lib-dynamic-app` | `rlDynamicLibApp` | Tests/examples for dynamic libraries | `bin\`           |
+| `lib-static`      | `rlStaticLib`     | Static libraries                     | `lib\`           |
+| `lib-static-app`  | `rlStaticLibApp`  | Tests/examples for static libraries  | `bin\`           |
 
 
 ### In Detail
@@ -41,15 +41,15 @@ All files share the following settings:
 * additional library directory for librarian
 * post-build event: copying DLLs from `$(OutDir)` to `bin\` post-build
 
-#### `lib-dynamic-test`
+#### `lib-dynamic-app`
 * additional include directory `$(ProjectDir)..\..\include` (relative for usage as git module)
-  + project file is assumed to be located within `test\<testname>\`
+  + project file is assumed to be located within `example\<example-name>\` or `test\<testname>\`
 
 #### `lib-static`
 * additional include directory `$(ProjectDir)..\include` (relative for usage as git module)
   + project file is assumed to be located within `src\`
 * additional library directory for librarian
 
-#### `lib-static-test`
+#### `lib-static-app`
 * additional include directory `$(ProjectDir)..\..\include` (relative for usage as git module)
-  + project file is assumed to be located within `test\<testname>\`
+  + project file is assumed to be located within `example\<example-name>\` or `test\<testname>\`
