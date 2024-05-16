@@ -1,6 +1,6 @@
-# RobinLe C++ Environment
+# RobinLe C++ Environment - Windows XP versions
 
-This repo contains code to be referenced in all my C++ projects.
+This repo contains code to be referenced in my Windows-XP-compatible C++ projects.
 
 
 ## Subdirectories
